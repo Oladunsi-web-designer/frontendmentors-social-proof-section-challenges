@@ -1,0 +1,266 @@
+*{
+    font-family: 'Spartan', sans-serif;
+    list-style-type: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: White: hsl(0, 0%, 100%);
+}
+
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top .top-left{
+    width: 45%;
+    height: 25em;
+    display: block;
+    background-image: url(images/bg-pattern-top-desktop.svg);
+   
+}
+
+.top .top-left .top-left-dets{
+    width: 80%;
+    margin-left: 35%;
+    margin-top: 3em;
+}
+
+.top .top-left .top-left-dets h1{
+    font-weight: 700;
+    font-size: 2.5em;
+    width: 100%;
+    color: hsl(300, 43%, 22%);
+}
+
+.top .top-left .top-left-dets p{
+    width: 100%;
+    margin-top: -2.5em;
+    font-weight: 100;
+    color: hsl(303, 10%, 53%);
+    margin-bottom: 2em;
+}
+
+.top .top-reviews{
+    width: 45%;
+    margin-left: 5%;
+    margin-top: 3em;
+    display: block;
+    height: 35em;
+    line-height: 2em;
+    overflow: hidden;
+    background-image: url(images/bg-pattern-bottom-desktop.svg);
+    background-size: 100% 100%;
+}
+
+.top .top-reviews .reviews{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 1em;
+    line-height: 1em;
+    box-shadow: 0 0 0.7em #ccc;
+}
+
+.top .top-reviews .reviews ul{
+    width: 40%;
+    margin-left: -5%;
+    display:flex;
+    justify-content: space-around;
+}
+
+.top .top-reviews .reviews p{
+    font-size: 0.7em;
+    width: 50%;
+    margin-top: 1.5em;
+}
+
+.second{
+    margin-left: 5%;
+}
+
+.third{
+    margin-left: 10%;
+}
+
+.testimonial{
+    width:100%;
+    height: auto;
+    margin-top: -20em;
+    margin-bottom: 2em;
+   
+}
+
+.testimonial .testimonial-row{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.testimonial .testimonial-row .testimonial-col{
+    width: 31%;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 0.5em;
+}
+
+.testimonial .testimonial-row .testimonial-col .testimonial-dets{
+    width:80%;
+    margin-left:10%;
+    margin-top: 2.5em
+}
+
+.testimonial .testimonial-row .testimonial-col .testimonial-dets .prof{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.testimonial .testimonial-row .testimonial-col .testimonial-dets .prof img{
+    width: 30%;
+    height: 4em;
+    border-radius: 100%;
+}
+
+.prof .prof-dets{
+    width: 60%;
+    margin-left:2.5%;
+}
+
+.prof h3{
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+}
+
+.testimonial-col p{
+    font-size: 13px;
+    color: hsl(300, 24%, 96%);
+    font-weight: 100;
+    margin-bottom: 10%;
+}
+
+.prof .prof-dets p{
+    color:  hsl(333, 80%, 67%);
+    font-size: 12px;
+    margin-top: -0.5em
+}
+
+.first{
+    margin-top: -2em;
+}
+
+.scnd{
+    margin-top: -1em
+}
+
+/* mobile view */
+
+@media  screen and (min-width:375px) and (max-width:767px){
+
+    .top{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .top .top-left{
+        width: 100%;
+        height: 15em;
+        display: block;
+        background-image: url(images/bg-pattern-top-mobile.svg); 
+        background-size: 100% 100%;
+    }
+
+    .top .top-left .top-left-dets{
+        width: 80%;
+        margin-left: 15%;
+        margin-top: 3em;
+    }
+
+    .top .top-left .top-left-dets p{
+        width: 100%;
+        margin-top: -2.5em;
+        font-weight: 100;
+        text-align: center;
+        color: hsl(303, 10%, 53%);
+        margin-bottom: 2em;
+    }
+
+    .top .top-reviews{
+        width: 100%;
+        margin-left: 5%;
+        margin-top: 5em;
+        display: block;
+        height: 35em;
+        line-height: 2em;
+        overflow: hidden;
+        background-image: none;
+        background-size: 100% 100%;
+    }
+
+    .top .top-reviews .reviews{
+        width: 80%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        background-color: hsl(300, 24%, 96%);
+        margin-bottom: 1em;
+        line-height: 1em;
+        box-shadow: 0 0 0.7em #ccc;
+    }
+
+    .top .top-reviews .reviews ul{
+        width: 40%;
+        margin-left: 20%;
+        display:flex;
+        justify-content: space-around;
+    }
+    
+    .top .top-reviews .reviews p{
+        width: 100%;
+        margin-top: 0em;
+        font-size: 15px;
+    }
+
+    .second{
+        margin-left: 0%;
+    }
+    
+    .third{
+        margin-left: 0%;
+    }
+
+    .testimonial{
+        width:100%;
+        height: 60em;
+        margin-top: -17em;
+        margin-bottom: 2em; 
+        background-image: url(images/bg-pattern-bottom-desktop.svg);
+        background-size: 200% 100%;
+    }
+
+    .testimonial .testimonial-row{
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .testimonial .testimonial-row .testimonial-col{
+        width: 100%;
+        background-color: hsl(300, 43%, 22%);
+        border-radius: 0.5em;
+        margin-top: 2.5em;
+    }
+    
+}
+
+/* thanks so much for the challenge, I really enjoyed it *smiles* */
